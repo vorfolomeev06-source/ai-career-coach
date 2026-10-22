@@ -57,7 +57,7 @@ class InterviewAnswerRequest(BaseModel):
 
 
 
-@app.get("/")
+@app.get("/health")
 def home():
     return {"message": "AI Career Coach Backend is running"}
 
