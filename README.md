@@ -2,6 +2,11 @@
 
 ## About the Project
 
+## Live Demo
+
+You can try my project here:
+
+https://ai-career-coach-alpha-three.vercel.app
 
 I wanted to create a simple website that helps people prepare for job interviews, improve their CVs, and understand which skills they need for a specific job.
 
