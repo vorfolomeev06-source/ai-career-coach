@@ -2,7 +2,6 @@
 
 ## About the Project
 
-AI Career Coach is my individual project that I built during the Ironhack AI Engineering Bootcamp.
 
 I wanted to create a simple website that helps people prepare for job interviews, improve their CVs, and understand which skills they need for a specific job.
 
