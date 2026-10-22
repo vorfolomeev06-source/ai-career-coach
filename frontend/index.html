@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Career Coach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Career Coach</h1>
+            <p>Your personal AI-powered career assistant</p>
+        </header>
+
+        <nav>
+            <button onclick="showTab('interview')">Mock Interview</button>
+            <button onclick="showTab('cv')">CV Reviewer</button>
+            <button onclick="showTab('job')">Job Fit</button>
+            <button onclick="showTab('roadmap')">Learning Roadmap</button>
+        </nav>
+
+        <main>
+            <section id="interview" class="tab">
+                <h2>Mock Interview</h2>
+                <input id="interviewRole" placeholder="Target job role">
+                <textarea id="interviewJob" placeholder="Job description (optional)"></textarea>
+                <button onclick="startInterview()">Start Interview</button>
+                <div id="interviewChat"></div>
+                <textarea id="interviewAnswer" placeholder="Your answer"></textarea>
+                <button onclick="sendAnswer()">Send Answer</button>
+            </section>
+
+            <section id="cv" class="tab" hidden>
+                <h2>CV Reviewer</h2>
+                <input id="cvRole" placeholder="Target job role">
+                <input type="file" id="cvFile" accept=".pdf" hidden>
+                <label for="cvFile" class="file-button">Choose PDF File</label>
+                <span id="fileName">No file selected</span>
+                <textarea id="cvText" placeholder="Or paste your CV text"></textarea>
+                <button onclick="reviewCV()">Analyze CV</button>
+                <div id="cvResult"></div>
+            </section>
+
+            <section id="job" class="tab" hidden>
+                <h2>Job Fit Analysis</h2>
+                <textarea id="jobCV" placeholder="Paste your CV"></textarea>
+                <textarea id="jobDescription" placeholder="Paste job description"></textarea>
+                <button onclick="analyzeJobFit()">Analyze Job Fit</button>
+                <div id="jobResult"></div>
+            </section>
+
+            <section id="roadmap" class="tab" hidden>
+                <h2>Learning Roadmap</h2>
+                <input id="roadmapRole" placeholder="Target job role">
+                <textarea id="missingSkills" placeholder="Missing skills, separated by commas"></textarea>
+                <textarea id="matchingSkills" placeholder="Existing skills, separated by commas"></textarea>
+                <button onclick="generateRoadmap()">Generate Roadmap</button>
+                <div id="roadmapResult"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

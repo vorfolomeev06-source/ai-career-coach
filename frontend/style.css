@@ -1,0 +1,196 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #0b1020;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 24px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    color: #a5b4fc;
+}
+
+header p {
+    color: #94a3b8;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+button {
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #818cf8;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+nav button {
+    flex: 1;
+    min-width: 150px;
+}
+
+main {
+    background: #151d30;
+    border: 1px solid #293449;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+h2 {
+    color: #c7d2fe;
+    margin-top: 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: #0b1020;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #818cf8;
+}
+
+.tab[hidden] {
+    display: none;
+}
+
+#interviewChat,
+#cvResult,
+#jobResult,
+#roadmapResult {
+    margin-top: 25px;
+    padding: 20px;
+    background: #0b1020;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+#interviewChat:empty,
+#cvResult:empty,
+#jobResult:empty,
+#roadmapResult:empty {
+    display: none;
+}
+
+.message {
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+}
+
+.assistant {
+    background: #252f4a;
+}
+
+.user {
+    background: #312e81;
+}
+
+.result-section {
+    margin-bottom: 20px;
+}
+
+.result-section h3 {
+    color: #a5b4fc;
+    margin-bottom: 8px;
+}
+
+.result-section ul {
+    padding-left: 22px;
+}
+
+.error {
+    color: #fca5a5;
+}
+
+.success {
+    color: #86efac;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 10px auto;
+        padding: 12px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+.file-button {
+    display: inline-block;
+    background: #6366f1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.file-button:hover {
+    background: #818cf8;
+}
+
+#fileName {
+    margin-left: 12px;
+    color: #94a3b8;
+}
